@@ -1,0 +1,22 @@
+[package]
+name = "rustpythonmoduleexample"
+version = "0.1.0"
+authors = ["simernes"]
+edition = "2018"
+
+[lib]
+name = "rustpythonmoduleexample"
+crate-type = ["dylib"]
+
+[dependencies.cpython]
+version = "0.2.1"
+features = ["extension-module"]
+
+[dependencies]
+log = "0.4.6"
+env_logger = "0.5"
+
+[dependencies.pyo3]
+version = "0.6.0-alpha.4"
+features = ["extension-module"]
+
