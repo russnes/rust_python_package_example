@@ -1,5 +1,5 @@
 # Rust Python Module Example
-Example of how to make a python module out of a Rust library implementations, using the pyo3 library.
+Example of how to make a python module out of a Rust library implementation, using the pyo3 library.
 
 To make python package:
 ```shell
