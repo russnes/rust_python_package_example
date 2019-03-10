@@ -6,8 +6,7 @@ To make python package:
 python3 setup.py sdist
 ```
 
-To install as a python package you will need to have the Rust toolchain on the nightly
-channel to compile the library for your architecture.
+To install as a python package you will need to have the Rust toolchain installed, to compile the library for your architecture.
 
 Install Rust as recommended by https://rustup.rs/.
 
