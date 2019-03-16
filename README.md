@@ -25,13 +25,10 @@ python3 setup.py install --user
 
 Finally import rustpythonmoduleexample in a python script like a normal library, and run functions with
 ```shell
-import rustpythonmoduleexample.rustpythonmoduleexample as rustpythonmoduleexample
+from rust_python_package_example import module_example
 
-rustpythonmoduleexample.init_lib()
-rustpythonmoduleexample.print_info("Hello World from Rust!")
+module_example.print_info("Hello World from Rust!")
 ```
-
-The Rust log library that I made needs to be initialized, so I made a separate function for that, but you of course won't need to have an init_lib() function in your program.
 
 ### Troubleshooting
 When I did this the first time on Fedora 29 I encountered a problem where cargo or rust couldn't find the python interpreter because it was looking at 'python' rather than 'python3', so to fix it I just made a symbolic link in /usr/bin/. If you already have Python 2 installed and there already exists a file named python there this will be problematic, but to do it create a symlink with:

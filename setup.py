@@ -19,7 +19,7 @@ setup_requires = ["setuptools-rust>=0.10.1", "wheel"]
 install_requires = []
 
 setup(
-    name="rustpythonmoduleexample",
+    name="rust_python_package_example",
     version="0.1.0",
     classifiers=[
         "Development Status :: 3 - Alpha",
@@ -29,8 +29,8 @@ setup(
         "Operating System :: POSIX",
         "Operating System :: MacOS :: MacOS X",
     ],
-    packages=["rustpythonmoduleexample"],
-    rust_extensions=[RustExtension("rustpythonmoduleexample.rustpythonmoduleexample")],
+    packages=["rust_python_package_example"],
+    rust_extensions=[RustExtension("rust_python_package_example.module_example")],
     install_requires=install_requires,
     setup_requires=setup_requires,
     include_package_data=True,
