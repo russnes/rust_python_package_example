@@ -23,7 +23,7 @@ Then run setup.py to install the package
 python3 setup.py install --user
 ```
 
-Finally import rustpythonmoduleexample in a python script like a normal library, and run functions with
+Finally import the module in a python script like a normal library, and run functions with
 ```shell
 from rust_python_package_example import module_example
 
