@@ -29,12 +29,3 @@ from rust_python_package_example import module_example
 
 module_example.print_info("Hello World from Rust!")
 ```
-
-### Troubleshooting
-When I did this the first time on Fedora 29 I encountered a problem where cargo or rust couldn't find the python interpreter because it was looking at 'python' rather than 'python3', so to fix it I just made a symbolic link in /usr/bin/. If you already have Python 2 installed and there already exists a file named python there this will be problematic, but to do it create a symlink with:
-```shell
-sudo ln -s /usr/bin/python3 /usr/bin/python
-```
-
-You should probably delete the link after to avoid problems with other packages.
-
