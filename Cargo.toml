@@ -13,6 +13,6 @@ log = "0.4.6"
 env_logger = "0.5"
 
 [dependencies.pyo3]
-version = "0.6.0-alpha.4"
+version = "0.13.2"
 features = ["extension-module"]
 
