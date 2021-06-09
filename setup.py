@@ -30,7 +30,7 @@ setup(
         "Operating System :: MacOS :: MacOS X",
     ],
     packages=["rust_python_package_example"],
-    rust_extensions=[RustExtension("rust_python_package_example.module_example")],
+    rust_extensions=[RustExtension("rust_python_package_example.module_example", debug=False)],
     install_requires=install_requires,
     setup_requires=setup_requires,
     include_package_data=True,
