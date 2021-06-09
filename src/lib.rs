@@ -4,6 +4,14 @@ extern crate env_logger;
 use pyo3::prelude::*;
 use pyo3::wrap_pyfunction;
 
+#[cfg(test)]
+mod tests {
+    #[test]
+    fn it_works() {
+        assert_eq!(2 + 2, 4);
+    }
+}
+
 #[pyfunction]
 fn print_info(_py: Python, message: &str) -> PyResult<u32> {
     info!("{}", message);

@@ -29,3 +29,8 @@ from rust_python_package_example import module_example
 
 module_example.print_info("Hello World from Rust!")
 ```
+
+To run tests, simply issue the command:
+```shell
+cargo test
+```
